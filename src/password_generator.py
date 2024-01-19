@@ -65,7 +65,11 @@ if __name__ == '__main__':
     pin_pass = PinGenerator(length=10)
     pin = pin_pass.generate()
     print(pin, "\n", "------")
-    random_pass = RandomPasswordGenerator(length=15, include_numbers=True, include_symbols=True)
+    random_pass = RandomPasswordGenerator(
+        length=15,
+        include_numbers=True,
+        include_symbols=True
+    )
     randompass = random_pass.generate()
     print(randompass, "\n", "------")
     memorable_pass = MemorablePasswordGenerator(num_of_words=13, separator="_}|", capitalize=True)
